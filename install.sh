@@ -19,7 +19,7 @@ fi
 
 rm $HOME/.config/swww/Cyberpunk-Edge/cyberpunk_dave.png 2>/dev/null || echo "dave gone already."
 rm $HOME/.config/swww/Cyberpunk-Edge/lucy_1.jpg 2>/dev/null || echo "no lucy.png."
-rm $HOME/.config/swww/Cyberpunk-Edge/lucy_2.jpg 2>/dev/null || echo "no lucy.png pt-II."
+rm $HOME/.config/swww/Cyberpunk-Edge/lucy_2.png 2>/dev/null || echo "no lucy.png pt-II."
 rm $HOME/.config/swww/Frosted-Glass/cloudy_mountain.png 2>/dev/null || echo "no mountain png."
 rm $HOME/.config/swww/Catppuccin-Mocha/apex_octane.jpg 2>/dev/null || echo "no roof sit guy."
 rm $HOME/.config/swww/Catppuccin-Mocha/hanged_man_tree.jpg 2>/dev/null || echo "no dead people background."
