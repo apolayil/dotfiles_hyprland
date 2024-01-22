@@ -40,4 +40,7 @@ rm $HOME/.config/swww/Graphite-Mono/chainsawman_sketch.png 2>/dev/null || echo "
 rm $HOME/.config/swww/Gruvbox-Retro/patterns.jpg 2>/dev/null || echo "no patterns."
 rm $HOME/.config/swww/Gruvbox-Retro/finalizer.png 2>/dev/null || echo "no burning head thing."
 rm $HOME/.config/swww/Rose-Pine/red_purple.jpg 2>/dev/null || echo "no girl."
-#Some terrible ahh scripting :3  
+
+source $HOME/.zshrc
+echo "Finished configuring dotfiles"
+#Some terrible ahh scripting :3 
