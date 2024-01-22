@@ -22,7 +22,7 @@
 ```
 Used [Hyprdots](https://github.com/prasanthrangan/hyprdots) as base
 
-Installation:
+#Installation:
 **NOTE:** Need to do before pulling again:
   git reset --hard HEAD
 Clone repository
