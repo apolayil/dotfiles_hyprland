@@ -10,7 +10,7 @@ then
     sudo pacman -S rsync
 fi
 
-rsync -aI --exclude='README.md' --exclude='.git' . $HOME/
+rsync -aI --exclude='README.md' --exclude='.git' --exclude='.sh' . $HOME/
 if [ $? -eq 0 ]; then
     echo "dotfiles successfully updated."
 else
