@@ -41,6 +41,5 @@ rm $HOME/.config/swww/Gruvbox-Retro/patterns.jpg 2>/dev/null || echo "no pattern
 rm $HOME/.config/swww/Gruvbox-Retro/finalizer.png 2>/dev/null || echo "no burning head thing."
 rm $HOME/.config/swww/Rose-Pine/red_purple.jpg 2>/dev/null || echo "no girl."
 
-source $HOME/.zshrc
 echo "Finished configuring dotfiles"
 #Some terrible ahh scripting :3 
