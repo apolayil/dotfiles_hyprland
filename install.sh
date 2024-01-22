@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -d "$ZSH_CUSTOM/plugins/zsh-vi-mode/.git" ]; then
+if [ -d "$ZSH_CUSTOM/plugins/zsh-vi-mode" ]; then
     echo "zsh-vi-mode already satisfied."
 else
     sudo git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode
