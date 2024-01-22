@@ -21,3 +21,11 @@
  .`                                 `/         
 ```
 Used [Hyprdots](https://github.com/prasanthrangan/hyprdots) as base
+
+Installation:
+**NOTE:** Need to do before pulling again:
+  git reset --hard HEAD
+Clone repository
+cd dotfiles_hyprland
+chmod +x install.sh
+./install.sh
