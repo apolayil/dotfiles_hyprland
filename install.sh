@@ -17,6 +17,7 @@ else
     echo "dotfiles failed to move."
 fi
 
+# De-anime / remove bad backgrounds
 rm $HOME/.config/swww/Cyberpunk-Edge/cyberpunk_dave.png 2>/dev/null || echo "dave gone already."
 rm $HOME/.config/swww/Cyberpunk-Edge/lucy_1.jpg 2>/dev/null || echo "no lucy.png."
 rm $HOME/.config/swww/Cyberpunk-Edge/lucy_2.png 2>/dev/null || echo "no lucy.png pt-II."
@@ -40,6 +41,8 @@ rm $HOME/.config/swww/Graphite-Mono/chainsawman_sketch.png 2>/dev/null || echo "
 rm $HOME/.config/swww/Gruvbox-Retro/patterns.jpg 2>/dev/null || echo "no patterns."
 rm $HOME/.config/swww/Gruvbox-Retro/finalizer.png 2>/dev/null || echo "no burning head thing."
 rm $HOME/.config/swww/Rose-Pine/red_purple.jpg 2>/dev/null || echo "no girl."
+rm $HOME/.config/swww/Rose-Pine/waifu_pink.png 2>/dev/null || echo "no other girl."
 
 echo "Finished configuring dotfiles"
+
 #Some terrible ahh scripting :3 
