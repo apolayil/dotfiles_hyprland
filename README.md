@@ -20,5 +20,4 @@
  `++:.                           `-/+/        └──────────────────────────────────────────────────┘ 
  .`                                 `/         
 ```
-
-Made with [Hyprdots](prasanthrangan/hyprdots) as a base, then configured
+Used [Hyprdots](https://github.com/prasanthrangan/hyprdots) as base
