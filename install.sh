@@ -20,4 +20,9 @@ else
     echo "failed configuring dotfiles"
 fi
 
+if grep -q '# deny=5' /etc/security/faillock.conf; then
+    echo "faillock deny already at 5"
+else 
+    sed -i '3s/.*/# deny=5/' /etc/security/faillock.conf
+fi
 #Some terrible ahh scripting :3 
