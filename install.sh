@@ -11,7 +11,7 @@ fi
 #fi
 
 rm -rf $HOME/.config/swww/
-dots checkout
+git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout
 #rsync -aI --exclude='README.md' --exclude='.git' --exclude='.sh' . $HOME/
 #if [ $? -eq 0 ]; then
 #    echo "dotfiles successfully updated."
