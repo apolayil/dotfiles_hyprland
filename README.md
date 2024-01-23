@@ -34,4 +34,6 @@ Setting up the dotfiles repository can be found on the [Arch Wiki](https://wiki.
   $ alias dots='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
   $ config checkout
   $ dots config --local status.showUntrackedFiles no
+  $ cd ~ && chmod +x install.sh
+  $ ./install.sh
 ```
