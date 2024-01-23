@@ -24,5 +24,6 @@ if grep -q '# deny=5' /etc/security/faillock.conf; then
     echo "faillock deny already at 5"
 else 
     sudo sed -i '3s/.*/# deny=5/' /etc/security/faillock.conf
+    echo "changed faillock to 5"
 fi
 #Some terrible ahh scripting :3 
