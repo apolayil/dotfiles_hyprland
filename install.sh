@@ -14,12 +14,10 @@ rm -rf $HOME/.config/swww/
 git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout -f
 
 #rsync -aI --exclude='README.md' --exclude='.git' --exclude='.sh' . $HOME/
-#if [ $? -eq 0 ]; then
-#    echo "dotfiles successfully updated."
-#else
-#    echo "dotfiles failed to move."
-#fi
-
-echo "Finished configuring dotfiles"
+if [ $? -eq 0 ]; then
+    echo "dotfiles successfully updated."
+else
+    echo "failed configuring dotfiles"
+fi
 
 #Some terrible ahh scripting :3 
