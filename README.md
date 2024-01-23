@@ -1,4 +1,4 @@
-# dotfiles_hyprland
+# Hyprland Dotfiles
 ```
                    -`                          ​​  > ​​ ​Arch Linux x86_64 
                   .o+`                        ┌──────────────────────────────────────────────────┐ 
