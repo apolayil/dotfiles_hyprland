@@ -2,30 +2,36 @@
 ```
                    -`                          ​​  > ​​ ​Arch Linux x86_64 
                   .o+`                        ┌──────────────────────────────────────────────────┐ 
-                 `ooo/                         ​​ ​ > Kernel : 6.7.0-arch3-1 
-                `+oooo:                        ​​ ​ > Uptime : 44m 
-               `+oooooo:                       ​​ ​ > Packages : 945 (pacman), 14 (flatpak) 
-               -+oooooo+:                      ​​ ​ > Resolution : 1920x1080 
+                 `ooo/                         ​​ ​ > Kernel : 6.6.13-1-lts 
+                `+oooo:                        ​​ ​ > Uptime : 8h 17m 
+               `+oooooo:                       ​​ ​ > Packages : 816 (pacman) 
+               -+oooooo+:                      ​​ ​ > Resolution : 2560x1440 
              `/:-:++oooo+:                     ​​ ​ > DE : Hyprland 
-            `/++++/+++++++:                    ​​ ​ > WM : sway 
-           `/++++++++++++++:                   ​​ ​ > Terminal : kitty 
-          `/+++ooooooooooooo/`                └──────────────────────────────────────────────────┘ 
-         ./ooosssso++osssssso+`                
-        .oossssso-````/ossssss+`               ​​ ​​​ > : harvin-dev@Latitude 
-       -osssssso.      :ssssssso.             ┌──────────────────────────────────────────────────┐ 
-      :osssssss/        osssso+++.             ​​ ​ > CPU : Intel i5-8250U (8) @ 1.600GHz [54.0°on] 
-     /ossssssss/        +ssssooo/-             ​​ ​ > GPU : Intel UHD Graphics 620 
-   `/ossssso+/:-        -:/+osssso+-           ​​ ​ > Battery 0: 38% [Charging] 
-  `+sso+:-`                 `.-/+oso:          ​​ ​ > Memory : 1732MiB / 7808MiB 
- `++:.                           `-/+/        └──────────────────────────────────────────────────┘ 
- .`                                 `/         
-```
-Used [Hyprdots](https://github.com/prasanthrangan/hyprdots) as base
+            `/++++/+++++++:                    ​​ ​ > Terminal : kitty 
+           `/++++++++++++++:                  └──────────────────────────────────────────────────┘ 
+          `/+++ooooooooooooo/`                 
+         ./ooosssso++osssssso+`                ​​ ​​​ > : arvin-dev@Arch
+        .oossssso-````/ossssss+`              ┌──────────────────────────────────────────────────┐ 
+       -osssssso.      :ssssssso.              ​​ ​ > CPU : AMD Ryzen 7 5700X (16) @ 3.400GHz [50.1°on] 
+      :osssssss/        osssso+++.             ​​ ​ > GPU : AMD ATI Radeon RX 6700/6700 XT/6750 XT / 6800M/6850M XT 
+     /ossssssss/        +ssssooo/-             ​​ ​ > Memory : 6437MiB / 32019MiB 
+   `/ossssso+/:-        -:/+osssso+-          └──────────────────────────────────────────────────┘ 
+  `+sso+:-`                 `.-/+oso:          
+ `++:.                           `-/+/ 
+ .`                                 `/
 
-#Installation:
-**NOTE:** Need to do before pulling again:
-  git reset --hard HEAD
-Clone repository
-cd dotfiles_hyprland
-chmod +x install.sh
-./install.sh
+
+```
+Used [Hyprdots](https://github.com/prasanthrangan/hyprdots) as base.
+
+
+
+## Installation
+Setting up the dotfiles repository can be found on the [Arch Wiki](https://wiki.archlinux.org/title/Dotfiles).  
+
+```bash
+  $ git clone --bare https://github.com/apolayil/dotfiles_hyprland.git $HOME/.dotfiles
+  $ alias dots='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+  $ config checkout
+  $ dots config --local status.showUntrackedFiles no
+```
