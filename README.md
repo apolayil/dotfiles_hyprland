@@ -2,7 +2,7 @@
 ```
                    -`                          ​​  > ​​ ​Arch Linux x86_64 
                   .o+`                        ┌──────────────────────────────────────────────────┐ 
-                 `ooo/                         ​​ ​ > Kernel : 6.6.13-1-lts 
+                 `ooo/                         ​​ ​ > Kernel : 6.7.0-arch3-1 
                 `+oooo:                        ​​ ​ > Uptime : 8h 17m 
                `+oooooo:                       ​​ ​ > Packages : 816 (pacman) 
                -+oooooo+:                      ​​ ​ > Resolution : 2560x1440 
