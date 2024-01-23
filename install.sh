@@ -11,7 +11,7 @@ fi
 #fi
 
 rm -rf $HOME/.config/swww/
-git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout
+git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout -f
 
 #rsync -aI --exclude='README.md' --exclude='.git' --exclude='.sh' . $HOME/
 #if [ $? -eq 0 ]; then
