@@ -12,15 +12,13 @@ fi
 
 rm -rf $HOME/.config/swww/
 git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout
+
 #rsync -aI --exclude='README.md' --exclude='.git' --exclude='.sh' . $HOME/
 #if [ $? -eq 0 ]; then
 #    echo "dotfiles successfully updated."
 #else
 #    echo "dotfiles failed to move."
 #fi
-
-# De-anime / remove bad backgrounds
-rm $HOME/.config/swww/
 
 echo "Finished configuring dotfiles"
 
