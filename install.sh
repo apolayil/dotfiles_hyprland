@@ -10,8 +10,8 @@ fi
 #    sudo pacman -S rsync
 #fi
 
-rm -rf $HOME/.config/swww/
-git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout -f
+#rm -rf $HOME/.config/swww/
+#git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout -f
 
 #rsync -aI --exclude='README.md' --exclude='.git' --exclude='.sh' . $HOME/
 if [ $? -eq 0 ]; then
@@ -19,11 +19,11 @@ if [ $? -eq 0 ]; then
 else
     echo "failed configuring dotfiles"
 fi
-
-if grep -q '# deny=5' /etc/security/faillock.conf; then
-    echo "faillock deny already at 5"
-else 
-    sudo sed -i '3s/.*/# deny=5/' /etc/security/faillock.conf
-    echo "changed faillock to 5"
+: '
+line=$(grep -n "# deny = \*" /etc/security/faillock.conf | cut -d: -f1)
+if [[ $(sed -n "${line}p" /etc/security/faillock.conf | cut -d= -f2) -ne 5 ]]; then
+    sed -i "${line}s/.*/deny = 5/" /etc/security/faillock.conf
+    echo "changed faillock deny to 5"
 fi
+'
 #Some terrible ahh scripting :3 

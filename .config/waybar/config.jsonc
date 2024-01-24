@@ -34,7 +34,7 @@
         "format": "  {}",
         "separate-outputs": true,
         "rewrite": {
-            "arvin-dev@ArchDesktop:(.*)": "$1 ",
+            "harvin-dev@Latitude:(.*)": "$1 ",
             "(.*) — Mozilla Firefox": "$1 󰈹",
             "(.*)Mozilla Firefox": "Firefox 󰈹",
             "(.*) - Visual Studio Code": "$1 󰨞",
