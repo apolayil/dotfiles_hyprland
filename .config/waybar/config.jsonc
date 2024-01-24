@@ -34,7 +34,7 @@
         "format": "  {}",
         "separate-outputs": true,
         "rewrite": {
-            "harvin-dev@Latitude:(.*)": "$1 ",
+            "arvin-dev@ArchDesktop:(.*)": "$1 ",
             "(.*) — Mozilla Firefox": "$1 󰈹",
             "(.*)Mozilla Firefox": "Firefox 󰈹",
             "(.*) - Visual Studio Code": "$1 󰨞",
@@ -82,8 +82,8 @@
         "thermal-zone": 2,
 	"hwmon-path": ["/sys/class/hwmon/hwmon2/temp1_input", "/sys/class/thermal/thermal_zone0/temp"],
 	"critical-threshold": 80,
-	"format-critical": "{temperatureC}°C ",
-	"format": "{temperatureC}°C "
+	"format-critical": " {temperatureC}°C",
+	"format": "{temperatureC}°C"
     },    "cpu": {
         "interval": 10,
         "format": "󰍛 {usage}%",
