@@ -32,8 +32,6 @@ Setting up the dotfiles repository can be found on the [Arch Wiki](https://wiki.
 ```bash
   $ git clone --bare https://github.com/apolayil/dotfiles_hyprland.git $HOME/.dotfiles
   $ alias dots='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
-  $ config checkout
+  $ dots checkout
   $ dots config --local status.showUntrackedFiles no
-  $ cd ~ && chmod +x install.sh
-  $ ./install.sh
 ```

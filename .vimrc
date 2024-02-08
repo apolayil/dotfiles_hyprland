@@ -57,7 +57,7 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
-"colorscheme slate
+" colorscheme slate
 map <F2> :bprev<CR>
 map <F3> :bnext<CR>
 nnoremap <silent> <C-l> :nohl<CR>
@@ -99,5 +99,6 @@ for key in ['<Up>', '<Down>', '<Left>', '<Right>']
   exec 'cnoremap' key '<Nop>'
 endfor
 
-" Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+
+set mouse=n
