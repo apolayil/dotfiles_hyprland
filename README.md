@@ -24,6 +24,7 @@
 ```
 Used [Hyprdots](https://github.com/prasanthrangan/hyprdots) as base.
 
+Note: Keyboard layout is in dvorak by default.
 
 
 ## Installation
